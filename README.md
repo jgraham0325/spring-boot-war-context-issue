@@ -1,7 +1,8 @@
 # spring-boot-war-context-issue
 Demonstrating an issue with the context not being set correctly for static resources when running as a war
 
-##Issue: When generating a war from a spring boot application and deploying it onto a standalone Tomcat, the static resources in folders are not accessible since the url doesn't contain the context.
+##Issue: 
+When generating a war from a spring boot application and deploying it onto a standalone Tomcat, the static resources in folders are not accessible since the url doesn't contain the context.
 
 e.g. http://localhost:8080/app/images/springboot.png
 
