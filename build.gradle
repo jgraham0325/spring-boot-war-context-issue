@@ -18,6 +18,7 @@ jar {
     version =  '0.1.0'
 }
 
+
 repositories {
     mavenCentral()
 }
@@ -27,7 +28,9 @@ targetCompatibility = 1.7
 
 dependencies {
     compile("org.springframework.boot:spring-boot-starter-web")
+    compile group: 'javax.servlet', name: 'jstl', version: '1.2'
     testCompile("org.springframework.boot:spring-boot-starter-test")
     providedRuntime("org.springframework.boot:spring-boot-starter-tomcat")
+    providedRuntime('org.apache.tomcat.embed:tomcat-embed-jasper')
 }
 
